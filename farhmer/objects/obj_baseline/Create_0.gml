@@ -1,0 +1,20 @@
+global. dev_mode = 0
+global. current_datetime = scr_unix_timestamp(date_current_datetime())
+
+
+#macro depth_floor 20
+#macro depth_actor 0
+#macro depth_wall  1
+#macro depth_pickup 2
+#macro depth_particle -1
+#macro depth_hud -20
+
+global. mouseover_string = ""
+
+scr_inventory_initialize()
+
+
+if(file_exists(working_directory + "/savegame.txt") && file_exists(working_directory + "/inv.txt"))
+{
+    scr_io_import_world()
+}
