@@ -1,5 +1,5 @@
 
-draw_sprite_ext(player_sprite,frame,x,y,1,1,player_dir,c_white,1)
+draw_sprite_ext(player_sprite,frame,x,y,2,2,player_dir,c_white,1)
 
 if(global. dev_mode = 1)
 {c = c_red
