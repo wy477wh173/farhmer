@@ -10,3 +10,5 @@ if(zero_waiter > 10)
     scr_io_export_world()
     zero_waiter = 0
 }
+
+//depth = -y

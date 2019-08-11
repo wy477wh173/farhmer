@@ -1,5 +1,4 @@
 ///scr_random_item()
-var randitem_array[0]
 
 randitem_array[0] = inv_seed_generic
 randitem_array[1] = inv_seed_sunflower

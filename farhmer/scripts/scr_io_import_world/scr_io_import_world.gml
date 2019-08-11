@@ -1,4 +1,3 @@
-
 var file_sel = file_text_open_read(working_directory + "\savegame.txt")
 var scanner = 0
 
@@ -73,5 +72,14 @@ while(!file_text_eof(file_sel))
     file_text_readln(file_sel)
     xep += 1
 }
-
 file_text_close(file_sel)
+
+//import river details
+//file_sel = file_text_open_read(working_directory + "\river.txt")
+//file_text_readln(file_sel)//skip the line that has the datetime on it 
+
+//global. river_lastdrop = file_text_read_real(file_sel)
+//file_text_readln(file_sel)
+
+//file_text_close(file_sel)
+//*/

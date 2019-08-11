@@ -7,7 +7,7 @@
 var file_sel = file_text_open_write(working_directory + "\savegame.txt")
 var scanner = instance_number(obj_soil)
 
-file_text_write_real(file_sel,scr_unix_timestamp(date_current_datetime()))
+file_text_write_string(file_sel,scr_unix_timestamp(date_current_datetime()))
 file_text_writeln(file_sel)
 var xep = 1
 
@@ -43,9 +43,6 @@ while(xep <= scanner)
     file_text_writeln(file_sel)
     file_text_writeln(file_sel)
     
-    
-    
-    
     xep += 1
 }
 
@@ -77,6 +74,7 @@ while(xep < scanner)
 }
 file_text_close(file_sel) //*/
 
+/////////////////////////////////////////////////////inventory fileio
 ///*
 file_sel = file_text_open_write(working_directory + "\inv.txt")
 
@@ -94,4 +92,15 @@ while(xep < scanner)
     xep += 1    
     
 }
+file_text_close(file_sel)//*/
+
+////////////////////////////////////////////////////////////// river fileio
+file_sel = file_text_open_write(working_directory + "\river.txt")
+
+file_text_write_string(file_sel,scr_unix_timestamp(date_current_datetime()))
+file_text_writeln(file_sel)
+
+file_text_write_string(file_sel, global. river_lastdrop)
+file_text_writeln(file_sel)
+    
 file_text_close(file_sel)//*/
