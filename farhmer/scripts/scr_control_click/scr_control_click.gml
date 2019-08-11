@@ -36,8 +36,6 @@ if(point_distance(x,y,movement_targetx,movement_targety) > movement_speed)
     else{motion_set(movement_targetdir,0)}
 }else{motion_set(movement_targetdir,0)}
 
-
-
 //freely rotate whenever
 if(movement_targetdir != player_dir)
 {
@@ -65,8 +63,10 @@ if(keyboard_check_pressed(ord("3"))){select = 2; if(global. inventory_max >= sel
 if(keyboard_check_pressed(ord("4"))){select = 3; if(global. inventory_max >= select){global. inventory_select = select}}
 if(keyboard_check_pressed(ord("5"))){select = 4; if(global. inventory_max >= select){global. inventory_select = select}}
 if(keyboard_check_pressed(ord("6"))){select = 5; if(global. inventory_max >= select){global. inventory_select = select}}
-if(keyboard_check_pressed(ord("7"))){select = 7; if(global. inventory_max >= select){global. inventory_select = select}}
-if(keyboard_check_pressed(ord("8"))){select = 8; if(global. inventory_max >= select){global. inventory_select = select}}
+if(keyboard_check_pressed(ord("7"))){select = 6; if(global. inventory_max >= select){global. inventory_select = select}}
+if(keyboard_check_pressed(ord("8"))){select = 7; if(global. inventory_max >= select){global. inventory_select = select}}
+if(keyboard_check_pressed(ord("9"))){select = 8; if(global. inventory_max >= select){global. inventory_select = select}}
+if(keyboard_check_pressed(ord("0"))){select = 9; if(global. inventory_max >= select){global. inventory_select = select}}
 
 
 
