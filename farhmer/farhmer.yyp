@@ -231,6 +231,14 @@
             }
         },
         {
+            "Key": "39a60537-c872-4356-938b-48a4e35fe0a4",
+            "Value": {
+                "id": "99558676-ec37-510d-29aa-6d4db6c20fd2",
+                "resourcePath": "scripts\\scr_spawn_particle_water\\scr_spawn_particle_water.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3d5e932d-58ca-6ff5-888d-98af7025503c",
             "Value": {
                 "id": "4d55f310-9331-b14b-a7bb-a85c8b68e82a",
@@ -455,6 +463,14 @@
             }
         },
         {
+            "Key": "6e15ef91-8cf2-4eac-b073-06d7c4877dcf",
+            "Value": {
+                "id": "9b144016-d615-41ba-b0d4-ab705aa2fc92",
+                "resourcePath": "sprites\\spr_particle_water\\spr_particle_water.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6e644b14-5ef8-4d68-80b6-392170b6e697",
             "Value": {
                 "id": "9d8fdc34-d3ab-4d37-a7d1-e894153c2d13",
@@ -540,6 +556,14 @@
                 "id": "358ae2f9-1ea7-48fd-8468-6f38f7d05d52",
                 "resourcePath": "scripts\/scr_inventory_initialize\/scr_inventory_initialize.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "85c41e35-c1f3-71c3-ec2f-3fb71bb0960f",
+            "Value": {
+                "id": "10dc86c4-19d7-e3af-7b41-12b33a236d60",
+                "resourcePath": "objects\\obj_particle_water\\obj_particle_water.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1112,6 +1136,7 @@
         "06e6e03d-cdd9-b069-d74b-51125ec26f7b",
         "fdc65504-6aa3-e148-8bce-70851247d063",
         "dcab48b3-2d97-f546-b2c0-4676467a2654",
+        "39a60537-c872-4356-938b-48a4e35fe0a4",
         "fa156572-9c64-65fb-9acc-2d3f5e986567",
         "53e4b32a-dd70-7fc8-7a13-6de3af927ecd",
         "902917cf-e668-64eb-70d9-b14e79a2635a",

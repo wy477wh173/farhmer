@@ -109,3 +109,18 @@ if(global. item_array[item,4] = type_pruner)
         }
     }
 }
+
+if(global. item_array[item,4] = type_wateringcan)
+{
+    if(collision_point(obj_cursor.x, obj_cursor.y,obj_soil,false,true))
+    {//if growing, reduce time by 10 minutes
+        var soil = instance_position(obj_cursor.x, obj_cursor.y,obj_soil)
+        if(soil.state = 2)
+        {
+            //soil.state = 2//growing state
+            soil.plant_finishtime = soil.plant_finishtime += -global. item_array[item,9]// reduce grow time by 10 minutes
+            scr_spawn_particle_water()
+            //scr_spawn_pickup(soil.plantid,1,soil.x,soil.y)
+        }
+    }
+}
