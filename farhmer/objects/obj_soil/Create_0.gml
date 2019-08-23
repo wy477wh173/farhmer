@@ -6,6 +6,8 @@ plant_starttime = 0
 plant_finishtime = 0
 plant_timediff = 0
 
+last_water = 0  
+
 plantid = 0
 
 return_item = 0

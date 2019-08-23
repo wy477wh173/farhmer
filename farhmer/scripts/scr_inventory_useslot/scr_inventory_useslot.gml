@@ -118,9 +118,13 @@ if(global. item_array[item,4] = type_wateringcan)
         if(soil.state = 2)
         {
             //soil.state = 2//growing state
-            soil.plant_finishtime = soil.plant_finishtime += -global. item_array[item,9]// reduce grow time by 10 minutes
-            scr_spawn_particle_water()
-            //scr_spawn_pickup(soil.plantid,1,soil.x,soil.y)
+            if(abs(soil.last_water - global. current_datetime) >= 3600)//only allow once per hour
+            {
+                soil.plant_finishtime = soil.plant_finishtime + -global. item_array[item,9]// reduce grow time by 10 minutes
+                scr_spawn_particle_water(obj_cursor.x, obj_cursor.y, 5)
+                soil.last_water = global. current_datetime
+                //scr_spawn_pickup(soil.plantid,1,soil.x,soil.y)
+            }
         }
     }
 }

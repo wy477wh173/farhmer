@@ -28,6 +28,9 @@ while(!file_text_eof(file_sel))
     
     inst.state = file_text_read_real(file_sel) 
     file_text_readln(file_sel)
+    
+    inst.last_water = file_text_read_real(file_sel) 
+    file_text_readln(file_sel)
     file_text_readln(file_sel)
     
     
@@ -72,6 +75,17 @@ while(!file_text_eof(file_sel))
     file_text_readln(file_sel)
     xep += 1
 }
+file_text_close(file_sel)
+
+////////////////////////////////////////////////////////////////////////////////////////////player info
+file_sel = file_text_open_read(working_directory + "\player.txt")
+//player spriteset
+obj_player.player_spriteset = file_text_read_string(file_sel)
+file_text_readln(file_sel)
+//player name
+obj_player.player_name = file_text_read_string(file_sel)
+file_text_readln(file_sel)
+
 file_text_close(file_sel)
 
 //import river details

@@ -22,6 +22,7 @@ while(xep <= scanner)
     store_finishtime = inst.plant_finishtime
     store_plantid = inst.plantid
     store_plantstate = inst.state
+    last_water = inst.last_water
     
     //write object values to file
     file_text_write_real(file_sel,storex)
@@ -40,6 +41,9 @@ while(xep <= scanner)
     file_text_writeln(file_sel)
     
     file_text_write_real(file_sel,store_plantstate)
+    file_text_writeln(file_sel)
+    
+    file_text_write_real(file_sel,last_water)
     file_text_writeln(file_sel)
     file_text_writeln(file_sel)
     
@@ -94,7 +98,19 @@ while(xep < scanner)
 }
 file_text_close(file_sel)//*/
 
-////////////////////////////////////////////////////////////// river fileio
+////////////////////////////////////////////////////////////// player fileio
+file_sel = file_text_open_write(working_directory + "\player.txt")
+
+file_text_write_string(file_sel, obj_player.player_spriteset)
+file_text_writeln(file_sel)
+
+file_text_write_string(file_sel, obj_player.name)
+file_text_writeln(file_sel)
+    
+file_text_close(file_sel)//*/
+
+
+//////////////////////////////////////////////////////////////////////river fileio
 file_sel = file_text_open_write(working_directory + "\river.txt")
 
 file_text_write_string(file_sel,scr_unix_timestamp(date_current_datetime()))

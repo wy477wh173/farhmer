@@ -5,7 +5,7 @@
 #macro type_hoe "Hoe"
 #macro type_shear "Shear"
 #macro type_pruner "Pruner"
-#macro type_wateringcan = "Watering Can"
+#macro type_wateringcan "Watering Can"
 
 //macros
 

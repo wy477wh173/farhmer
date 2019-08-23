@@ -11,20 +11,6 @@ if(state = 0)
 if(use = 1)
 {
     use = 0
-    //if(scr_inventory_get_type_slot(global. inventory_select) = type_flower)
-    //{//spawn a pot
-    //    scr_spawn_pot(x,y, global. inventory_array[global. inventory_select,0])
-    //    scr_inventory_transactslot(global. inventory_select,-1)
-    //}
-    
-    //if(scr_inventory_get_type_slot(global. inventory_select) = type_seed)
-    //{//till soil
-    //    till = 1
-    //}
-    //if(scr_inventory_get_type_slot(global. inventory_select) = type_none)
-    //{
-    //    till = 1
-    //}
 }
 
 if(state = 1)

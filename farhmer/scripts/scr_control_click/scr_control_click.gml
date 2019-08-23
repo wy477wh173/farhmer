@@ -1,9 +1,10 @@
-if(mouse_check_button(mb_left))
+if(mouse_check_button(mb_left) && movable = 1)
 {
     movement_targetx = obj_cursor.x
     movement_targety = obj_cursor.y
     movement_targetdir = point_direction(x,y, movement_targetx,movement_targety)
 }
+movable = 1
 
 if(mouse_check_button_pressed(mb_right))
 {
@@ -108,6 +109,7 @@ if(global. dev_mode = 1)
         scr_spawn_pickup(inv_tool_hoe,1,obj_cursor.x,obj_cursor.y)
         scr_spawn_pickup(inv_tool_shear,1,obj_cursor.x + 32,obj_cursor.y)
         scr_spawn_pickup(inv_tool_pruner,1,obj_cursor.x + 64,obj_cursor.y)
+        scr_spawn_pickup(inv_tool_wateringcan,1,obj_cursor.x + 96, obj_cursor.y)
     }
     
     if(keyboard_check_pressed(ord("2")))
@@ -118,5 +120,12 @@ if(global. dev_mode = 1)
     if(keyboard_check_pressed(ord("3")))
     {
         scr_spawn_pickup(inv_seed_floppy,1,obj_cursor.x,obj_cursor.y)
+    }
+    
+    if(keyboard_check_pressed(ord("C")))
+    {
+        if(player_spriteset = "crow")
+        {player_spriteset = "rabbit"}
+        else{player_spriteset = "crow"}
     }
 }
