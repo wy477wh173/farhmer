@@ -60,10 +60,21 @@ while(inv_ct < global. inventory_max)
         {
             obj_player.movable = 0
             obj_cursor.state = 1
-            if(mouse_check_button_pressed(mb_left))
+            if(mouse_check_button_released(mb_left))
             {
-                global. inventory_select = inv_ct 
+                if(cur.obfusy > drawy)
+                {
+                    global. inventory_select = inv_ct 
+                }
+                
+                if(cur.obfusy < drawy)
+                    {
+                        global. inventory_select = inv_ct 
+                        scr_inventory_dropslot(obj_cursor.x, obj_cursor.y,)
+                    }
             }
+            
+            
         }
     }
     inv_ct += 1

@@ -17,6 +17,10 @@ if(!instance_exists(obj_cursor))
 if(!instance_exists(obj_draw_hud))
 {instance_create(x,y,obj_draw_hud)}
 
+mmb_counter = 0
+mmb_counter_inst = 0
+mmb_counter_max = 30
+
 
 player_spriteset = "crow"
 name = "Rick"

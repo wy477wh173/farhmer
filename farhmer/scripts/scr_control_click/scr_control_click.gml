@@ -17,10 +17,29 @@ if(keyboard_check_pressed(ord("D")))
     scr_inventory_dropslot(obj_cursor.x, obj_cursor.y,global. inventory_select)
 }
 
-if(mouse_check_button_pressed(mb_middle))
+if(mouse_check_button(mb_middle))
 {
-    //obj_cursor.use = 1
-    scr_inventory_dropslot(obj_cursor.x, obj_cursor.y,global. inventory_select)
+    //if held count up, dropping more slowly as you keep holding
+    if(mmb_counter >= mmb_counter_inst)
+    {
+        mmb_counter = 0
+    }
+    
+    if(mmb_counter = 0 )//&& scr_inventory_checkslot(global. inventory_select) > 0)
+    {//if pressed drop one
+        //obj_cursor.use = 1
+        scr_inventory_dropslot(obj_cursor.x, obj_cursor.y,global. inventory_select)
+        scr_inventory_scrubempty()
+        if(mmb_counter_inst > 1)
+            {mmb_counter_inst = mmb_counter_inst * .8}
+    }
+    mmb_counter += 1
+}
+
+if(mouse_check_button_released(mb_middle))
+{
+    mmb_counter_inst = mmb_counter_max
+    mmb_counter = 0
 }
 
 //checking dist to endpoint
@@ -40,10 +59,13 @@ if(point_distance(x,y,movement_targetx,movement_targety) > movement_speed)
 //freely rotate whenever
 if(movement_targetdir != player_dir)
 {
+    player_dir = movement_targetdir
+    /*
     if(movement_targetdir > player_dir)
     {player_dir += ((movement_targetdir - player_dir) * .2)}
+    
     if(movement_targetdir < player_dir)
-    {player_dir += ((movement_targetdir - player_dir) * .2)}
+    {player_dir += ((movement_targetdir - player_dir) * .2)}//*/
 }
 
 
