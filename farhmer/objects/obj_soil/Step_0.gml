@@ -126,6 +126,14 @@ if(state = 2)
     
     
     //if growing, change the sprite based on how far along the plant is
+    
+    /*
+    //trying a new way
+    plant_timediff = total_growtime / sprite_get_number(growspr)
+    grow_frame = floor(plant_timediff)
+    
+    //*/
+    
     if(plant_timediff < total_growtime *.3) // 1/3 of the way
     {grow_frame = 2}
     if(plant_timediff >= total_growtime *.3 && plant_timediff < total_growtime *.6) // 1/3 to 1/6 of the way
@@ -133,6 +141,7 @@ if(state = 2)
     if(plant_timediff >= total_growtime *.6 && plant_timediff <= total_growtime ) // more than 1\6 but less than complete
     {grow_frame = 0}
     
+    //*/
     if(global. current_datetime >= plant_finishtime)
     {
         state = 3

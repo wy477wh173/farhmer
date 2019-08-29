@@ -1,6 +1,6 @@
 global. dev_mode = 0
 global. current_datetime = scr_unix_timestamp(date_current_datetime())
-global. river_lastdrop =  1565493285
+global. river_lastdrop =  1565493285 // still not importing the fucking river file
 
 #macro depth_floor 20
 #macro depth_actor 0

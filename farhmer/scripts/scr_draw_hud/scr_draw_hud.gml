@@ -48,8 +48,12 @@ while(inv_ct < global. inventory_max)
     sprite = global. item_array[global. inventory_array[inv_ct,0],3]//sprite for current slot as defined by item_array
     name = global. item_array[global. inventory_array[inv_ct,0],1]//name defined by item array
     stack = global. inventory_array[inv_ct,1]
-    
-    draw_rectangle_color(drawx - 2,drawy - 2,drawx + 68,drawy + 68,c,c,c,c,1)//draw borderbox
+    c = c_gray
+    draw_set_alpha(.5)
+    draw_rectangle_color(drawx - 2,drawy - 2,drawx + 66,drawy + 66,c,c,c,c,0)//draw backing box
+    draw_set_alpha(1)
+    c = c_red
+    draw_rectangle_color(drawx - 2,drawy - 2,drawx + 66,drawy + 66,c,c,c,c,1)//draw borderbox
     draw_sprite_ext(sprite,0,drawx,drawy,2,2,0,c_white,1)//draw sprite
     draw_text(drawx,drawy, string(global. inventory_array[inv_ct,1]))// draw stack number
     

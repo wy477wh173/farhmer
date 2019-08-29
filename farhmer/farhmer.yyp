@@ -439,14 +439,6 @@
             }
         },
         {
-            "Key": "6c405b86-07f2-4cfc-b3c2-0e9f6930f683",
-            "Value": {
-                "id": "1be813d0-b95e-48e4-b506-db658a4d072b",
-                "resourcePath": "datafiles_yy\\river.txt.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "6c49a6d7-36c7-4842-ab14-0fc3e61162bb",
             "Value": {
                 "id": "22670354-e8e5-447d-98c9-da5b10d87207",
@@ -604,6 +596,22 @@
                 "id": "4026a2e1-ac48-43f4-22b5-1f439d5f6246",
                 "resourcePath": "views\\8766adc1-cb09-796e-5b7f-64ff8c26f472.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "882f5113-fd2f-4def-a2dd-93addf040afc",
+            "Value": {
+                "id": "ea5264ec-5a0b-4cc9-b80d-b150fa41cfab",
+                "resourcePath": "datafiles_yy\\blank.txt.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "8d14b4ab-bee2-404d-976c-322270e00d40",
+            "Value": {
+                "id": "aad00224-1c70-484c-8a3e-d5673a3f829e",
+                "resourcePath": "datafiles_yy\\riverinfo.txt.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {

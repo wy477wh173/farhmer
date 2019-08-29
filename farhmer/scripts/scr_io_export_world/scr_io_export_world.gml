@@ -25,10 +25,10 @@ while(xep <= scanner)
     last_water = inst.last_water
     
     //write object values to file
-    file_text_write_real(file_sel,storex)
+    file_text_write_string(file_sel,storex)
     file_text_writeln(file_sel)
 
-    file_text_write_real(file_sel,storey)
+    file_text_write_string(file_sel,storey)
     file_text_writeln(file_sel)
     
     file_text_write_string(file_sel,string(store_starttime))
@@ -64,13 +64,13 @@ while(xep < scanner)
 {
     inst = scr_instance_nearest_nth(x,y,obj_pot,xep)
     
-    file_text_write_real(file_sel,inst.x)
+    file_text_write_string(file_sel,inst.x)
     file_text_writeln(file_sel)
     
-    file_text_write_real(file_sel,inst.y)
+    file_text_write_string(file_sel,inst.y)
     file_text_writeln(file_sel)
     
-    file_text_write_real(file_sel,inst.flower)
+    file_text_write_string(file_sel,inst.flower)
     file_text_writeln(file_sel)
     file_text_writeln(file_sel)
     
@@ -111,10 +111,7 @@ file_text_close(file_sel)//*/
 
 
 //////////////////////////////////////////////////////////////////////river fileio
-file_sel = file_text_open_write(working_directory + "\river.txt")
-
-file_text_write_string(file_sel,scr_unix_timestamp(date_current_datetime()))
-file_text_writeln(file_sel)
+file_sel = file_text_open_write(working_directory + "\riverinfo.txt")
 
 file_text_write_string(file_sel, global. river_lastdrop)
 file_text_writeln(file_sel)

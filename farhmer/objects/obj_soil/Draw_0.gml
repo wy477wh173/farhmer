@@ -8,7 +8,7 @@ if(state = 2)
 
 if(state = 3)
 {
-    draw_sprite(growspr,2,x,y)
+    draw_sprite(growspr,3,x,y)
 }
 
 if(global. dev_mode = 1)

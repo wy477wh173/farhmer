@@ -89,11 +89,13 @@ file_text_readln(file_sel)
 file_text_close(file_sel)
 
 //import river details
-//file_sel = file_text_open_read(working_directory + "\river.txt")
-//file_text_readln(file_sel)//skip the line that has the datetime on it 
+if(file_exists(working_directory + "\riverinfo.txt"))
+{
+    file_sel = file_text_open_read(working_directory + "\riverinfo.txt")
+    
+    global. river_lastdrop = file_text_read_real(file_sel)
+    file_text_readln(file_sel)
 
-//global. river_lastdrop = file_text_read_real(file_sel)
-//file_text_readln(file_sel)
-
-//file_text_close(file_sel)
+    file_text_close(file_sel)
+}else{file_copy(working_directory + "blank.txt",working_directory + "riverinfo.txt")}
 //*/
