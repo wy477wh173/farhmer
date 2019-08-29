@@ -42,6 +42,7 @@ file_text_close(file_sel)
 
 //vases
 file_sel = file_text_open_read(working_directory+"\pot.txt")
+
 file_text_readln(file_sel)//skip the date encoding
 
 while(!file_text_eof(file_sel))
@@ -86,16 +87,7 @@ file_text_readln(file_sel)
 obj_player.player_name = file_text_read_string(file_sel)
 file_text_readln(file_sel)
 
+global. river_lastdrop = file_text_read_real(file_sel)
+file_text_readln(file_sel)
+
 file_text_close(file_sel)
-
-//import river details
-if(file_exists(working_directory + "\riverinfo.txt"))
-{
-    file_sel = file_text_open_read(working_directory + "\riverinfo.txt")
-    
-    global. river_lastdrop = file_text_read_real(file_sel)
-    file_text_readln(file_sel)
-
-    file_text_close(file_sel)
-}else{file_copy(working_directory + "blank.txt",working_directory + "riverinfo.txt")}
-//*/

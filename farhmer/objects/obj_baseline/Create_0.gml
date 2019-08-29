@@ -14,7 +14,7 @@ global. mouseover_string = ""
 scr_inventory_initialize()
 
 
-if(file_exists(working_directory + "/savegame.txt") && file_exists(working_directory + "/inv.txt"))
+if(file_exists(working_directory + "\savegame.txt") && file_exists(working_directory + "\inv.txt") && file_exists(working_directory + "\player.txt"))
 {
     scr_io_import_world()
 }

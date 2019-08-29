@@ -49,6 +49,8 @@ while(xep <= scanner)
     
     xep += 1
 }
+file_text_write_string(file_sel, "---")
+file_text_writeln(file_sel)
 
 file_text_close(file_sel)//*/
 
@@ -106,14 +108,15 @@ file_text_writeln(file_sel)
 
 file_text_write_string(file_sel, obj_player.name)
 file_text_writeln(file_sel)
+
+//last riverdrop
+file_text_write_string(file_sel, global. river_lastdrop)
+file_text_writeln(file_sel)
     
 file_text_close(file_sel)//*/
 
 
 //////////////////////////////////////////////////////////////////////river fileio
-file_sel = file_text_open_write(working_directory + "\riverinfo.txt")
-
-file_text_write_string(file_sel, global. river_lastdrop)
-file_text_writeln(file_sel)
+//file_sel = file_text_open_write(working_directory + "\riverinfo.txt")
     
-file_text_close(file_sel)//*/
+//file_text_close(file_sel)//*/
