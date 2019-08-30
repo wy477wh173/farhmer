@@ -1,6 +1,14 @@
 
 draw_sprite(soil_sprite,state,x,y)
 
+if(watered = 1)
+{
+    c = c_dkgray
+    draw_set_alpha(.5)
+    draw_rectangle_color(bbox_left,bbox_top,bbox_right,bbox_bottom,c,c,c,c,0)
+    draw_set_alpha(1)
+}
+
 if(state = 2)
 {
     draw_sprite(growspr,grow_frame,x,y)
@@ -10,6 +18,8 @@ if(state = 3)
 {
     draw_sprite(growspr,3,x,y)
 }
+
+
 
 if(global. dev_mode = 1)
 {c = c_red

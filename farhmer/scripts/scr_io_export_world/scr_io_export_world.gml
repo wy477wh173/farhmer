@@ -62,7 +62,7 @@ file_text_writeln(file_sel)
 xep = 1
 scanner = instance_number(obj_pot)
 
-while(xep < scanner)
+while(xep <= scanner)
 {
     inst = scr_instance_nearest_nth(x,y,obj_pot,xep)
     

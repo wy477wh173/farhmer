@@ -6,5 +6,5 @@ if(global. dev_mode = 1)
 {
     draw_text(x + 128, y + 128,"Last riverspawn: " + string(last_login))
     draw_text(x + 128, y + 164,"current time " + string(current_login))
-    draw_text(x + 128, y + 192,"Difference: " + string(timespan) + "/" + string(timespan/3600))
+    draw_text(x + 128, y + 192,"Difference: " + string(timespan) + "/" + string(timespan/3600) +"("+string(number)+") left to spawn")
 }

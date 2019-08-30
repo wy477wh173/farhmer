@@ -115,6 +115,11 @@ if(collision_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,obj_cursor,fals
 //growing 
 if(state = 2)
 {
+    //if watered, triggere watered
+    if(abs(last_water - global. current_datetime) <= 3600)
+    {
+        watered = 1
+    }
     plant_timediff = plant_finishtime - global. current_datetime
     
     total_growtime = plant_finishtime - plant_starttime

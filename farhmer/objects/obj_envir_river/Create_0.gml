@@ -25,14 +25,15 @@ randomize()
 if(number > 12)
 {number = 12}    
 
-while(number > 1)
+while(number > 0)
 {
     number += -1
     randist = irandom(riverlength)
     
-    randx = river_startx + lengthdir_x(randist,flow_dir) + 256
-    randy = river_starty + lengthdir_x(randist,flow_dir)
+    randx = river_startx + lengthdir_x(randist,flow_dir) + 128
+    randy = river_starty + lengthdir_y(randist,flow_dir)
     
     scr_spawn_pickup(scr_random_item(),1,randx, randy)
     global. river_lastdrop = global. current_datetime 
+
 }

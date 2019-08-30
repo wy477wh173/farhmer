@@ -25,7 +25,7 @@ draw_text(drawx,drawy,unixtime)
 
 //drawing inventory
 drawx = 32
-drawy = window_get_height() - 64//view_get_hport(0) - 64
+drawy = view_get_hport(0) - 64//view_get_hport(0) - 64
 inv_ct = 0
 spacing = 68
 

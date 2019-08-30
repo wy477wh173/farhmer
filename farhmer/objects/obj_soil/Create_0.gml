@@ -15,6 +15,7 @@ return_stack = 0
 growspr = spr_none
 grow_frame = 0
 
+watered = 0
 depth =depth_floor
 seed_counter = 30 * irandom_range(30,300)
 

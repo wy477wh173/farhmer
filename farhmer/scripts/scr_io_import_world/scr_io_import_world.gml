@@ -44,7 +44,7 @@ file_text_close(file_sel)
 file_sel = file_text_open_read(working_directory+"\pot.txt")
 
 file_text_readln(file_sel)//skip the date encoding
-
+xep = 0
 while(!file_text_eof(file_sel))
 {
     pinst = instance_create(0,0,obj_pot)

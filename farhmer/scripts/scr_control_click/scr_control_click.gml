@@ -17,6 +17,12 @@ if(keyboard_check_pressed(ord("D")))
     scr_inventory_dropslot(obj_cursor.x, obj_cursor.y,global. inventory_select)
 }
 
+if(keyboard_check_pressed(ord("P")))
+{
+    randing = irandom(5000)
+    screen_save(working_directory + "screenshot"+string(randing)+".png")
+}
+
 if(mouse_check_button(mb_middle))
 {
     //if held count up, dropping more slowly as you keep holding
