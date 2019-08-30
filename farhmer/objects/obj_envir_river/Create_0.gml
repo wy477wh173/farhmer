@@ -1,5 +1,6 @@
 
 last_login = global. river_lastdrop
+depth = depth_floor
 
 current_login = global.current_datetime
 
@@ -20,7 +21,7 @@ timespan = current_login - last_login
 
 //convert time since last checkin
 number = floor(timespan / 3600)
-
+randomize()
 if(number > 12)
 {number = 12}    
 

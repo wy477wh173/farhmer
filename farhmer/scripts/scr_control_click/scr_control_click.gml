@@ -30,7 +30,7 @@ if(mouse_check_button(mb_middle))
         //obj_cursor.use = 1
         scr_inventory_dropslot(obj_cursor.x, obj_cursor.y,global. inventory_select)
         scr_inventory_scrubempty()
-        if(mmb_counter_inst > 1)
+        if(mmb_counter_inst > 5)
             {mmb_counter_inst = mmb_counter_inst * .8}
     }
     mmb_counter += 1
