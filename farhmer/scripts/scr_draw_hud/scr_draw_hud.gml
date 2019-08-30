@@ -6,22 +6,8 @@ drawy = 0
 unixtime = global. current_datetime
 draw_text(drawx,drawy,unixtime)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+drawy += 32
+draw_text(drawx,drawy, obj_player.name)
 
 //drawing inventory
 drawx = 32

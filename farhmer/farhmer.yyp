@@ -599,6 +599,14 @@
             }
         },
         {
+            "Key": "86c4e5ef-0588-4cb5-adfd-479dad3107fd",
+            "Value": {
+                "id": "0f017e38-407d-4642-bc1f-5c3495e9aa6e",
+                "resourcePath": "sprites\\spr_inv_flower_fireweed\\spr_inv_flower_fireweed.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8766adc1-cb09-796e-5b7f-64ff8c26f472",
             "Value": {
                 "id": "4026a2e1-ac48-43f4-22b5-1f439d5f6246",
@@ -655,6 +663,14 @@
             }
         },
         {
+            "Key": "9bfcb193-7d44-40a5-8d5b-b3e8491200fc",
+            "Value": {
+                "id": "f62fb507-f903-4745-93db-f85299f7fdeb",
+                "resourcePath": "views\\9bfcb193-7d44-40a5-8d5b-b3e8491200fc.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "9e44bbc0-d5e7-70b9-8f22-10dbe66b7b77",
             "Value": {
                 "id": "d838caee-1fee-4fa8-9d1e-50fa21079707",
@@ -675,6 +691,14 @@
             "Value": {
                 "id": "35e2d21d-2e66-4430-abe7-e70eb2138611",
                 "resourcePath": "sprites\\spr_grow_sunflower\\spr_grow_sunflower.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a4fefe80-99e7-466b-b24e-72bac2ce52ec",
+            "Value": {
+                "id": "930e7fa8-90d3-428d-8d7b-53db2f3fc76d",
+                "resourcePath": "sprites\\spr_inv_seed_fireweed\\spr_inv_seed_fireweed.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1156,6 +1180,14 @@
                 "id": "dcc3a643-7cfa-4052-aa96-84ef81025440",
                 "resourcePath": "scripts\\raycast_point\\raycast_point.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ff7a6692-cb8b-45b7-87de-19fb442f83bf",
+            "Value": {
+                "id": "2ffd3757-f167-4696-af16-cb27d936904c",
+                "resourcePath": "sprites\\spr_grow_fireweed\\spr_grow_fireweed.yy",
+                "resourceType": "GMSprite"
             }
         }
     ],
