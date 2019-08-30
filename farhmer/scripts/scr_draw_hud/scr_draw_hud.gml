@@ -74,7 +74,7 @@ while(inv_ct < global. inventory_max)
                 if(cur.obfusy < drawy)
                     {
                         global. inventory_select = inv_ct 
-                        scr_inventory_dropslot(obj_cursor.x, obj_cursor.y,)
+                        scr_inventory_dropslot(obj_cursor.x, obj_cursor.y,1)
                     }
             }
             
