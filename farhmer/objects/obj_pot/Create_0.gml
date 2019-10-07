@@ -6,3 +6,4 @@ flowery = y
 solid = 1
 
 destroyme = 0
+global. save_game = 1

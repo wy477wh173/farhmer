@@ -138,7 +138,7 @@ if(state = 2)
     grow_frame = floor(plant_timediff)
     
     //*/
-    
+    //replace me to allow for arbitrary size
     if(plant_timediff < total_growtime *.3) // 1/3 of the way
     {grow_frame = 2}
     if(plant_timediff >= total_growtime *.3 && plant_timediff < total_growtime *.6) // 1/3 to 1/6 of the way
@@ -149,6 +149,7 @@ if(state = 2)
     //*/
     if(global. current_datetime >= plant_finishtime)
     {
+        global. save_game = 1//trigger save
         state = 3
         scr_spawn_pickup(plantid,1,x,y)
         

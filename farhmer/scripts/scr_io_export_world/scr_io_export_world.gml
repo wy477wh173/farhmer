@@ -4,7 +4,7 @@
 
 
 ///*
-var file_sel = file_text_open_write(working_directory + "\savegame.txt")
+var file_sel = file_text_open_write("savegame.txt")
 var scanner = instance_number(obj_soil)
 
 file_text_write_string(file_sel,scr_unix_timestamp(date_current_datetime()))
@@ -55,7 +55,7 @@ file_text_writeln(file_sel)
 file_text_close(file_sel)//*/
 
 ///*
-file_sel = file_text_open_write(working_directory+"\pot.txt")
+file_sel = file_text_open_write("pot.txt")
 file_text_write_string(file_sel, global. current_datetime)
 file_text_writeln(file_sel)
 
@@ -82,7 +82,7 @@ file_text_close(file_sel) //*/
 
 /////////////////////////////////////////////////////inventory fileio
 ///*
-file_sel = file_text_open_write(working_directory + "\inv.txt")
+file_sel = file_text_open_write("inv.txt")
 
 file_text_write_real(file_sel,scr_unix_timestamp(date_current_datetime()))
 file_text_writeln(file_sel)
@@ -101,7 +101,7 @@ while(xep < scanner)
 file_text_close(file_sel)//*/
 
 ////////////////////////////////////////////////////////////// player fileio
-file_sel = file_text_open_write(working_directory + "\player.txt")
+file_sel = file_text_open_write("player.txt")
 
 file_text_write_string(file_sel, obj_player.player_spriteset)
 file_text_writeln(file_sel)

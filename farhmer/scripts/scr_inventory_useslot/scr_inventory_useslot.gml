@@ -12,6 +12,7 @@ if(global. item_array[item,4] = inv_none)
     //if place is not free
     if(collision_point(obj_cursor.x, obj_cursor.y,obj_pot,false,true))
     {
+        global. save_game = 1
         var pot = instance_nearest(obj_cursor.x, obj_cursor.y,obj_pot)
         pot.destroyme = 1
     }
@@ -22,6 +23,7 @@ if(global.item_array[item, 4] = type_flower)//---------------------------flower 
     //place a vase if place is free
     if(place_free(obj_cursor.x, obj_cursor.y))
     {
+        global. save_game = 1
         scr_inventory_transactitem(item,-1)
         scr_spawn_pot(obj_cursor.x,obj_cursor.y,item)
     }
@@ -42,9 +44,10 @@ if(global. item_array[item, 4] = type_seed)
     if(collision_point(obj_cursor.x, obj_cursor.y,obj_soil,false,1))
     {
         var soil = instance_position(obj_cursor.x, obj_cursor.y,obj_soil)
-     
+        
         if(soil.state = 1)
         {
+            global. save_game = 1
             soil.plant_seed = item
             //scr_inventory_transactitem(item, -1) // object is subtracted by soil
         }
@@ -57,6 +60,7 @@ if(global. item_array[item,4] = type_hoe)
     {
         var soil = instance_position(obj_cursor.x, obj_cursor.y,obj_soil)
         var update = 1
+        global. save_game = 1
         
         if(soil.state = 0 && update = 1)
         {
@@ -80,6 +84,7 @@ if(global. item_array[item,4] = type_shear)
 {
     if(collision_point(obj_cursor.x, obj_cursor.y,obj_soil,false,true))
     {//if grown, cut reward
+        global. save_game = 1
         var soil = instance_position(obj_cursor.x, obj_cursor.y,obj_soil)
         if(soil.state = 3)
         {
@@ -100,6 +105,7 @@ if(global. item_array[item,4] = type_pruner)
 {
     if(collision_point(obj_cursor.x, obj_cursor.y,obj_soil,false,true))
     {//if grown, cut reward
+        global. save_game = 1
         var soil = instance_position(obj_cursor.x, obj_cursor.y,obj_soil)
         if(soil.state = 3)
         {
@@ -114,6 +120,7 @@ if(global. item_array[item,4] = type_wateringcan)
 {
     if(collision_point(obj_cursor.x, obj_cursor.y,obj_soil,false,true))
     {//if growing, reduce time by 10 minutes
+        global. save_game = 1
         var soil = instance_position(obj_cursor.x, obj_cursor.y,obj_soil)
         if(soil.state = 2)
         {

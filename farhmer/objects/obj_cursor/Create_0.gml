@@ -8,5 +8,7 @@ till = 0
 depth = depth_hud
 use = 0
 
+cursor_size = 2
+
 obfusx = 0
 obfusy = 0

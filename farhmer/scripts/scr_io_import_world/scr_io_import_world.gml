@@ -1,4 +1,4 @@
-var file_sel = file_text_open_read(working_directory + "\savegame.txt")
+var file_sel = file_text_open_read("savegame.txt")
 var scanner = 0
 
 global. last_checkin = file_text_read_real(file_sel)
@@ -41,7 +41,7 @@ file_text_close(file_sel)
 
 
 //vases
-file_sel = file_text_open_read(working_directory+"\pot.txt")
+file_sel = file_text_open_read("pot.txt")
 
 file_text_readln(file_sel)//skip the date encoding
 xep = 0
@@ -63,7 +63,7 @@ while(!file_text_eof(file_sel))
 file_text_close(file_sel)
 
 //import inventory text
-file_sel = file_text_open_read(working_directory + "\inv.txt")
+file_sel = file_text_open_read("inv.txt")
 file_text_readln(file_sel)//skip the line that has the datetime on it 
 
 xep = 0
@@ -79,7 +79,7 @@ while(!file_text_eof(file_sel))
 file_text_close(file_sel)
 
 ////////////////////////////////////////////////////////////////////////////////////////////player info
-file_sel = file_text_open_read(working_directory + "\player.txt")
+file_sel = file_text_open_read("player.txt")
 //player spriteset
 obj_player.player_spriteset = file_text_read_string(file_sel)
 file_text_readln(file_sel)
