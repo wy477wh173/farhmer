@@ -9,7 +9,8 @@ movable = 1
 if(mouse_check_button_pressed(mb_right))
 {
     //obj_cursor.interact = 1
-    scr_inventory_useslot(global. inventory_select)
+    if(movable = 1)
+    {scr_inventory_useslot(global. inventory_select)}
 }
 
 if(keyboard_check_pressed(ord("D")))
@@ -19,7 +20,7 @@ if(keyboard_check_pressed(ord("D")))
 
 if(keyboard_check_pressed(ord("P")))
 {
-    randing = irandom(5000)
+    randing = global. current_datetime
     screen_save(working_directory + "screenshot"+string(randing)+".png")
 }
 

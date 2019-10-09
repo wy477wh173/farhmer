@@ -12,8 +12,9 @@ var adjusted_spot = 0// point in this specific row
 var drawx = startx
 var drawy = starty
 var spacer = 74
+global. box_max = 79
 
-while(item_count < 99)
+while(item_count < global. box_max)
 {
     while(adjusted_spot < columns)
     {
@@ -32,9 +33,35 @@ while(item_count < 99)
         draw_sprite_ext(sprite,0,drawx,drawy,2,2,0,c_white,1)//draw sprite
         draw_text(drawx,drawy, string(global. inventory_box_array[item_count,1]))// draw stack number
         
+        
+        
+        cur = obj_cursor
+        if(cur.obfusx > drawx && cur.obfusx < drawx + 64)
+        {
+            if(cur.obfusy > drawy && cur.obfusy < drawy + 64)
+            {
+                obj_player.movable = 0
+                obj_cursor.state = 1
+                
+                if(mouse_check_button_released(mb_left))
+                {//infooooo draw
+                    box_select = item_count//this will be the info to draw on the right-hand side though it's not in yet
+                }
+                
+                if(mouse_check_button_pressed(mb_right))
+                {//xfer to inventory
+                    scr_inventory_additem(global. inventory_box_array[item_count,0],global. inventory_box_array[item_count,1])
+                    global. inventory_box_array[item_count,0] = 0
+                    global. inventory_box_array[item_count,1] = 0
+                    
+                }
+            }
+        }
+        
         adjusted_spot += 1
         item_count += 1
     }
+    endrow = drawx + 128
     row += 1
     adjusted_spot = 0
 }
@@ -47,4 +74,9 @@ if(mouse_wheel_up())
 if(mouse_wheel_down())
 {
     starty += 10
+}
+
+if(obj_cursor.x > endrow)
+{
+    activated = 0
 }

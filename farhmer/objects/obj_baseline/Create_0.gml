@@ -12,7 +12,9 @@ global. river_lastdrop =  global. current_datetime // still not importing the fu
 global. mouseover_string = ""
 
 scr_inventory_initialize()
+global. save_game = 0
 
+global. start_time = 5
 
 if(file_exists(working_directory + "\savegame.txt") && file_exists(working_directory + "\inv.txt") && file_exists(working_directory + "\player.txt"))
 {

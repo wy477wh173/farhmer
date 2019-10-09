@@ -56,12 +56,19 @@ while(inv_ct < global. inventory_max)
                 {
                     global. inventory_select = inv_ct 
                 }
-                
-                if(cur.obfusy < drawy)
+            }
+            
+            if(mouse_check_button_pressed(mb_right))
+            {
+                if(instance_exists(obj_envir_storagebox))
+                {
+                    if(obj_envir_storagebox.activated = 1)
                     {
-                        global. inventory_select = inv_ct 
-                        scr_inventory_dropslot(obj_cursor.x, obj_cursor.y,1)
+                        scr_inventory_storeitem(global. inventory_array[inv_ct,0],global. inventory_array[inv_ct,1])
+                        global. inventory_array[inv_ct,0]= 0
+                        global. inventory_array[inv_ct,1]= 0
                     }
+                }
             }
             
             

@@ -21,4 +21,6 @@ seed_counter = 30 * irandom_range(30,300)
 
 check_free = 1
 plant_seed = inv_none
-global. save_game = 1//trigger save
+
+if(global. start_time < 0)
+{global. save_game = 1 }

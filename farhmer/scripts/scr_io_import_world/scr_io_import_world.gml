@@ -79,27 +79,28 @@ while(!file_text_eof(file_sel))
 file_text_close(file_sel)
 
 //storage box
-xep = 0
-while(xep < 100)
+file_sel = file_text_open_read(working_directory +"storagebox.txt")
+file_text_readln(file_sel)
+lurp = 0
+while(lurp < 80)
 {
-    global. inventory_box_array[xep, 0] = 0//choose(inv_seed_floppy,inv_flower_generic,inv_tool_pruner)//file_text_read_real(file_sel)
-    //file_text_readln(file_sel)
-    
-    global. inventory_box_array[xep, 1] = 0//file_text_read_real(file_sel)
-    //file_text_readln(file_sel)
-    xep += 1
+    global. inventory_box_array[lurp, 0] = 0
+    global. inventory_box_array[lurp, 1] = 0
+    lurp += 1
 }
 
 xep = 0
-while(xep < irandom_range(4,10))
+while(!file_text_eof(file_sel))
 {
-    global. inventory_box_array[xep, 0] = choose(inv_seed_floppy,inv_flower_generic,inv_tool_pruner)//file_text_read_real(file_sel)
-    //file_text_readln(file_sel)
+    global. inventory_box_array[xep, 0] = file_text_read_real(file_sel)//0//choose(inv_seed_floppy,inv_flower_generic,inv_tool_pruner)//file_text_read_real(file_sel)
+    file_text_readln(file_sel)
     
-    global. inventory_box_array[xep, 1] = 5//file_text_read_real(file_sel)
-    //file_text_readln(file_sel)
+    global. inventory_box_array[xep, 1] = file_text_read_real(file_sel)//0//file_text_read_real(file_sel)
+    file_text_readln(file_sel)
     xep += 1
 }
+file_text_close(file_sel)
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////player info
 file_sel = file_text_open_read("player.txt")

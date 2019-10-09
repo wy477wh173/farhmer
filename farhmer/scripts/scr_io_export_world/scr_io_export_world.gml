@@ -95,8 +95,26 @@ while(xep < scanner)
     file_text_writeln(file_sel)
     file_text_write_real(file_sel, global. inventory_array[xep,1])
     file_text_writeln(file_sel)
-    xep += 1    
-    
+    xep += 1
+}
+file_text_close(file_sel)//*/
+
+/////////////////////////////////////////////////////storagebox io
+///*
+file_sel = file_text_open_write(working_directory + "storagebox.txt")
+
+file_text_write_real(file_sel,scr_unix_timestamp(date_current_datetime()))
+file_text_writeln(file_sel)
+
+scanner = 79
+xep = 0
+while(xep < scanner)
+{
+    file_text_write_string(file_sel, global. inventory_box_array[xep,0])
+    file_text_writeln(file_sel)
+    file_text_write_string(file_sel, global. inventory_box_array[xep,1])
+    file_text_writeln(file_sel)
+    xep += 1
 }
 file_text_close(file_sel)//*/
 

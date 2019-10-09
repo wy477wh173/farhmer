@@ -15,5 +15,5 @@ arraysize += 1
 //randitem_array[6] = inv_tool_shear
 //randitem_array[7] = inv_tool_wateringcan
 
-retr = randitem_array[irandom(arraysize)]
+retr = randitem_array[irandom(arraysize - 1)]
 return retr;
