@@ -157,3 +157,9 @@ if(global. dev_mode = 1)
         else{player_spriteset = "crow"}
     }
 }
+
+if(keyboard_check_pressed(vk_escape))
+{
+    scr_io_export_world()
+    game_end()
+}

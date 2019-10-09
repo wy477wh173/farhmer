@@ -78,6 +78,29 @@ while(!file_text_eof(file_sel))
 }
 file_text_close(file_sel)
 
+//storage box
+xep = 0
+while(xep < 100)
+{
+    global. inventory_box_array[xep, 0] = 0//choose(inv_seed_floppy,inv_flower_generic,inv_tool_pruner)//file_text_read_real(file_sel)
+    //file_text_readln(file_sel)
+    
+    global. inventory_box_array[xep, 1] = 0//file_text_read_real(file_sel)
+    //file_text_readln(file_sel)
+    xep += 1
+}
+
+xep = 0
+while(xep < irandom_range(4,10))
+{
+    global. inventory_box_array[xep, 0] = choose(inv_seed_floppy,inv_flower_generic,inv_tool_pruner)//file_text_read_real(file_sel)
+    //file_text_readln(file_sel)
+    
+    global. inventory_box_array[xep, 1] = 5//file_text_read_real(file_sel)
+    //file_text_readln(file_sel)
+    xep += 1
+}
+
 ////////////////////////////////////////////////////////////////////////////////////////////player info
 file_sel = file_text_open_read("player.txt")
 //player spriteset
