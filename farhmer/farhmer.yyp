@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "1542ecaf-f5fe-4d86-9b1e-654e9752c7ed",
+            "Value": {
+                "id": "52f3fe40-da8f-4cb3-a984-430ebd2133b8",
+                "resourcePath": "views\\1542ecaf-f5fe-4d86-9b1e-654e9752c7ed.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "15f8fa34-bd33-fa05-eec5-8d0a4385c245",
             "Value": {
                 "id": "5e7ce35d-b00e-9dad-b4ea-c4a06b134ffc",
@@ -212,6 +220,22 @@
                 "id": "74ce5772-f326-4d1a-92b0-adb06ca48278",
                 "resourcePath": "scripts\\scr_draw_bar\\scr_draw_bar.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2d8b08e6-93b4-4144-9fa0-67e809c0f3a0",
+            "Value": {
+                "id": "9cf1aa90-35bd-491a-88c8-905364c4cddc",
+                "resourcePath": "sprites\\spr_inv_flower_pumpkin\\spr_inv_flower_pumpkin.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2ef587af-6aa2-4d20-80fb-2f87e3dbec90",
+            "Value": {
+                "id": "957c9481-2895-4de7-9760-bc9928f74b37",
+                "resourcePath": "sprites/spr_grow_pumpkin/spr_grow_pumpkin.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -308,6 +332,14 @@
                 "id": "b00563f5-4377-18e6-76ee-bedb8c47e841",
                 "resourcePath": "scripts\\scr_inventory_scrubempty\\scr_inventory_scrubempty.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "479c60ce-03ba-4ebd-b31f-ee93670fc60b",
+            "Value": {
+                "id": "c5595a40-ba76-4b78-919b-a3d965ad275b",
+                "resourcePath": "views\\479c60ce-03ba-4ebd-b31f-ee93670fc60b.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -452,6 +484,14 @@
                 "id": "35aec623-9e25-4b46-b1b2-5fd15d3ead4c",
                 "resourcePath": "datafiles_yy\\inv.txt.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "64265c0e-876f-4d8e-b649-4a934df1e07c",
+            "Value": {
+                "id": "29277497-a4cd-4a5d-b140-5b0c645fe1aa",
+                "resourcePath": "sprites\\spr_inv_seed_TEMPLATE\\spr_inv_seed_TEMPLATE.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -610,7 +650,7 @@
             "Key": "7fdb635b-6c28-121e-e4d8-2588a8c21b9c",
             "Value": {
                 "id": "358ae2f9-1ea7-48fd-8468-6f38f7d05d52",
-                "resourcePath": "scripts\/scr_inventory_initialize\/scr_inventory_initialize.yy",
+                "resourcePath": "scripts/scr_inventory_initialize/scr_inventory_initialize.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -786,7 +826,7 @@
             "Key": "ab4cd2d9-0adb-f441-f5ab-5f85cf509ccb",
             "Value": {
                 "id": "ce116379-3fe9-a839-2b82-ca3842400e14",
-                "resourcePath": "scripts\/scr_inventory_dropslot\/scr_inventory_dropslot.yy",
+                "resourcePath": "scripts/scr_inventory_dropslot/scr_inventory_dropslot.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -919,6 +959,14 @@
             }
         },
         {
+            "Key": "bf69f06b-1096-4dab-b4f4-376711d29cc5",
+            "Value": {
+                "id": "a5d0fc37-e03d-44a4-a632-214943751553",
+                "resourcePath": "sprites\\spr_inv_flower_TEMPLATE\\spr_inv_flower_TEMPLATE.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bf7ac38f-4a92-420e-98ea-69652a82bbe2",
             "Value": {
                 "id": "b4aa4c87-0c36-4921-b6f3-b2ad11e8d5ef",
@@ -994,7 +1042,7 @@
             "Key": "cf3470c1-eaeb-19b2-53f7-753a6483ba81",
             "Value": {
                 "id": "5de2bec4-ba81-e31a-4bc3-79a670942a3d",
-                "resourcePath": "objects\/obj_envir_storagebox\/obj_envir_storagebox.yy",
+                "resourcePath": "objects/obj_envir_storagebox/obj_envir_storagebox.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1135,10 +1183,26 @@
             }
         },
         {
+            "Key": "ed01c7a8-ccbd-4d64-b67d-eb406d40b8b7",
+            "Value": {
+                "id": "7952f3d0-b730-447e-a761-85f45ffde4d7",
+                "resourcePath": "sprites\\spr_grow_TEMPLATE\\spr_grow_TEMPLATE.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f0afe69e-8f97-4f65-ba78-95f9459ee3ed",
             "Value": {
                 "id": "c54fb2ef-43ef-4825-9f42-a5f0fafc3b82",
                 "resourcePath": "sprites\\spr_inv_tool_hoe\\spr_inv_tool_hoe.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f220c472-b000-4f1f-885c-1d02372d79e4",
+            "Value": {
+                "id": "dee8b0ec-4944-4dc0-908c-a2e2c2fce731",
+                "resourcePath": "sprites\\spr_inv_seed_pumpkin\\spr_inv_seed_pumpkin.yy",
                 "resourceType": "GMSprite"
             }
         },

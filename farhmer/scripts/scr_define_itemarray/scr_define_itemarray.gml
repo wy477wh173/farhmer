@@ -15,11 +15,13 @@
 #macro inv_seed_sunflower 2
 #macro inv_seed_floppy 3
 #macro inv_seed_fireweed 4
+#macro inv_seed_pumpkin 5
 
 #macro inv_flower_sunflower 100
 #macro inv_flower_generic  101
 #macro inv_flower_floppy 102
 #macro inv_flower_fireweed 103
+#macro inv_flower_pumpkin 104
 
 #macro inv_tool_hoe 200
 #macro inv_tool_shear 201
@@ -110,6 +112,22 @@ item_growsprite = spr_grow_fireweed
 
 scr_write_itemarray(inv_seed_fireweed)
 
+item_name = "Pumpkin Seed"// item name
+item_desc = "A tasty seed for roasting, or planting for spooky plants" // item desc
+item_sprite = spr_inv_seed_pumpkin //itemsprite
+item_type= type_seed//item type "seed" "restore happiness" ""
+item_gdays = 0//grow_days
+item_ghours = 10//grow_hours
+item_gminutes = 31//grow_minutes
+item_gseconds = 19//grow_seconds
+item_value= 2//value, referenced when used by itemtype(ex, money when sold, regenerated)
+item_windparticle = noone//wind particle
+item_reward = inv_flower_pumpkin//grow_reward, inventory item. Will be spawned as a pickup
+item_yield = 1//yield number of reward returned
+item_growsprite = spr_grow_pumpkin
+
+scr_write_itemarray(inv_seed_pumpkin)
+
 
 
 
@@ -180,6 +198,22 @@ item_yield = 0//yield number of reward returned
 item_growsprite = spr_none
 
 scr_write_itemarray(inv_flower_fireweed)
+
+item_name = "Pumpkin" // item name
+item_desc = "A hearty gourd, often used to ward off spirits" // item desc
+item_sprite = spr_inv_flower_pumpkin//itemsprite
+item_type= type_deployable //item type "seed" "restore happiness" ""
+item_gdays = 0//grow_days
+item_ghours = 0//grow_hours
+item_gminutes = 0//grow_minutes
+item_gseconds = 0//grow_seconds
+item_value= 55//value, referenced when used by itemtype(ex, money when sold, regenerated)
+item_windparticle = noone//wind particle
+item_reward = inv_none//grow_reward, inventory item. Will be spawned as a pickup
+item_yield = 0//yield number of reward returned
+item_growsprite = spr_none
+
+scr_write_itemarray(inv_flower_pumpkin)
 
 
 

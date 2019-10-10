@@ -1,7 +1,7 @@
 ///scr_random_item()
 var arraysize = 0
 
-randitem_array[arraysize] = inv_seed_generic
+randitem_array[arraysize] = inv_seed_pumpkin
 arraysize += 1
 randitem_array[arraysize] = inv_seed_sunflower
 arraysize += 1
