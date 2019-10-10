@@ -19,12 +19,14 @@
 #macro inv_seed_floppy 3
 #macro inv_seed_fireweed 4
 #macro inv_seed_pumpkin 5
+#macro inv_seed_ghost 6
 
 #macro inv_flower_sunflower 100
 #macro inv_flower_generic  101
 #macro inv_flower_floppy 102
 #macro inv_flower_fireweed 103
 #macro inv_flower_pumpkin 104
+#macro inv_flower_ghost 105
 
 #macro inv_tool_hoe 200
 #macro inv_tool_shear 201
@@ -105,7 +107,7 @@ item_sprite = spr_inv_seed_fireweed //itemsprite
 item_type= type_seed//item type "seed" "restore happiness" ""
 item_gdays = 0//grow_days
 item_ghours = 1//grow_hours
-item_gminutes = 35//grow_minutes
+item_gminutes = 420//grow_minutes
 item_gseconds = 69//grow_seconds
 item_value= 2//value, referenced when used by itemtype(ex, money when sold, regenerated)
 item_windparticle = noone//wind particle
@@ -130,6 +132,22 @@ item_yield = 1//yield number of reward returned
 item_growsprite = spr_grow_pumpkin
 
 scr_write_itemarray(inv_seed_pumpkin)
+
+item_name = "Ghost Seed"// item name
+item_desc = "Strange little seed that looks strangely like a skull" // item desc
+item_sprite = spr_inv_seed_ghost //itemsprite
+item_type= type_seed//item type "seed" "restore happiness" ""
+item_gdays = 0//grow_days
+item_ghours = 12//grow_hours
+item_gminutes = 45//grow_minutes
+item_gseconds = 19//grow_seconds
+item_value = 2//value, referenced when used by itemtype(ex, money when sold, regenerated)
+item_windparticle = noone//wind particle
+item_reward = inv_flower_ghost//grow_reward, inventory item. Will be spawned as a pickup
+item_yield = 1//yield number of reward returned
+item_growsprite = spr_grow_ghost
+
+scr_write_itemarray(inv_seed_ghost)
 
 
 
@@ -217,6 +235,22 @@ item_yield = 0//yield number of reward returned
 item_growsprite = spr_none
 
 scr_write_itemarray(inv_flower_pumpkin)
+
+item_name = "Ghost Flower" // item name
+item_desc = "A small flower that looks strangely like a trapped soul" // item desc
+item_sprite = spr_inv_flower_ghost//itemsprite
+item_type= type_flower //item type "seed" "restore happiness" ""
+item_gdays = 0//grow_days
+item_ghours = 0//grow_hours
+item_gminutes = 0//grow_minutes
+item_gseconds = 0//grow_seconds
+item_value= 55//value, referenced when used by itemtype(ex, money when sold, regenerated)
+item_windparticle = noone//wind particle
+item_reward = inv_none//grow_reward, inventory item. Will be spawned as a pickup
+item_yield = 0//yield number of reward returned
+item_growsprite = spr_none
+
+scr_write_itemarray(inv_flower_ghost)
 
 
 

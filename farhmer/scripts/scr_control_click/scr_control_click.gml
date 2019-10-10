@@ -45,6 +45,12 @@ if(mouse_check_button_released(mb_middle))
     mmb_counter = 0
 }
 
+if(keyboard_check_pressed(192))
+{
+    global. console = 1
+    io_clear()
+}
+
 //checking dist to endpoint
 if(point_distance(x,y,movement_targetx,movement_targety) > movement_speed)
 {

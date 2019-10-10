@@ -1,8 +1,8 @@
 {
-    "id": "52ff260d-8fbd-a813-2a23-bb70121cd281",
+    "id": "18cb3377-3499-6d9f-1b73-c9263f98ff1d",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_draw_console",
+    "name": "scr_console_listen",
     "IsCompatibility": false,
     "IsDnD": false
 }

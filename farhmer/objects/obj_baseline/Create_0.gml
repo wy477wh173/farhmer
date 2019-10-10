@@ -9,6 +9,9 @@ global. river_lastdrop =  global. current_datetime // still not importing the fu
 #macro depth_particle -1
 #macro depth_hud -20
 
+global. console = 0
+
+
 global. mouseover_string = ""
 
 scr_inventory_initialize()

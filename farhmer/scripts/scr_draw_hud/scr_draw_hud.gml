@@ -3,6 +3,7 @@
 drawx = 0
 drawy = 0
 
+draw_set_font(fnt_hud)
 unixtime = global. current_datetime
 draw_text(drawx,drawy,unixtime)
 
@@ -34,6 +35,9 @@ draw_text_ext(drawx, drawy - 16, string(global. item_array[selected_item,1]) + "
 //}
 
 //don't do commmands if mouse is in clickable area
+
+scr_console_listen(128,128)
+draw_set_font(fnt_hud)
 
 draw_set_valign(fa_top)
 while(inv_ct < global. inventory_max)

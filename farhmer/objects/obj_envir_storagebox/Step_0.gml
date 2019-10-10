@@ -18,3 +18,8 @@ if(collision_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,obj_pickup,fals
     instance_destroy(pickup)
     scr_spawn_particle_generic(x,y, 5)
 }
+
+if(activated = 1)
+{
+    obj_player.movable = 0
+}

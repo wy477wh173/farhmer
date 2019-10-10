@@ -66,6 +66,27 @@ while(item_count < global. box_max)
     adjusted_spot = 0
 }
 
+drawx = endrow
+drawy = starty
+//draw selected item info
+drawitem = global. inventory_box_array[box_select,0]
+if(drawitem != inv_none)
+{
+    draw_text(drawx, drawy,global. item_array[drawitem,1])//item title
+    drawy += 32
+    
+    imgscale = 4
+    draw_sprite_ext(global. item_array[drawitem,3],0,drawx,drawy,imgscale,imgscale,0,c_white,1)//sprite
+    drawy += sprite_get_height(global. item_array[drawitem,3]) *imgscale
+    
+    draw_text_ext(drawx,drawy,global.item_array[drawitem,2],16,256)//flavor text
+    drawy += string_height_ext(global.item_array[drawitem,2],16,256)
+    growtime = "Grow Time: \n " + string(global. item_array[drawitem,5]) + " days, " 
+    + string(global. item_array[drawitem,6]) + " hours, " 
+    + string(global. item_array[drawitem,7])+ " minutes, " 
+    + string(global. item_array[drawitem,8]) + " seconds.";
+    draw_text_ext(drawx,drawy,growtime,16,256)// draw grow time
+}
 
 if(obj_cursor.obfusx > endrow && cursor_spaced = 1)
 {// if mouse is off the right end of the menu, close ment
