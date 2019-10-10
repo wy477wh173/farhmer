@@ -115,7 +115,7 @@ if(collision_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,obj_cursor,fals
 //growing 
 if(state = 2)
 {
-    //if watered, triggere watered
+    //if watered, triggered watered
     if(abs(last_water - global. current_datetime) <= 3600)
     {
         watered = 1

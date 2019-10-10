@@ -1,10 +1,12 @@
 //untilled by default
 state = 0
-soil_sprite = spr_soil_test
+soil_sprite = spr_soil
 planted = 0
 plant_starttime = 0
 plant_finishtime = 0
 plant_timediff = 0
+
+sprite_index = soil_sprite
 
 last_water = 0  
 

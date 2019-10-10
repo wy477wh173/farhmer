@@ -25,7 +25,7 @@ while(item_count < global. box_max)
         name = global. item_array[global. inventory_box_array[item_count,0],1]//name defined by item array
         stack = global. inventory_box_array[item_count,1]
         c = c_gray
-        draw_set_alpha(.5)
+        draw_set_alpha(.8)
         draw_rectangle_color(drawx - 2,drawy - 2,drawx + 66,drawy + 66,c,c,c,c,0)//draw backing box
         draw_set_alpha(1)
         c = c_red
@@ -36,9 +36,9 @@ while(item_count < global. box_max)
         
         
         cur = obj_cursor
-        if(cur.obfusx > drawx && cur.obfusx < drawx + 64)
+        if(cur.obfusx > drawx && cur.obfusx < drawx + spacer)
         {
-            if(cur.obfusy > drawy && cur.obfusy < drawy + 64)
+            if(cur.obfusy > drawy && cur.obfusy < drawy + spacer)
             {
                 obj_player.movable = 0
                 obj_cursor.state = 1
@@ -66,17 +66,8 @@ while(item_count < global. box_max)
     adjusted_spot = 0
 }
 
-if(mouse_wheel_up())
-{
-    starty += -10
-}
-
-if(mouse_wheel_down())
-{
-    starty += 10
-}
 
 if(obj_cursor.x > endrow)
-{
+{// if mouse is off the right end of the menu, close ment
     activated = 0
 }

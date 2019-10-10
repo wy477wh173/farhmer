@@ -1,23 +1,17 @@
-if(mouse_check_button(mb_left) && movable = 1)
+if(mouse_check_button(mb_right) && movable = 1)
 {
     movement_targetx = obj_cursor.x
     movement_targety = obj_cursor.y
     movement_targetdir = point_direction(x,y, movement_targetx,movement_targety)
 }
-movable = 1
 
-if(mouse_check_button_pressed(mb_right))
+if(mouse_check_button_pressed(mb_left))
 {
     //obj_cursor.interact = 1
     if(movable = 1)
     {scr_inventory_useslot(global. inventory_select)}
 }
-
-if(keyboard_check_pressed(ord("D")))
-{
-    scr_inventory_dropslot(obj_cursor.x, obj_cursor.y,global. inventory_select)
-}
-
+movable = 1
 if(keyboard_check_pressed(ord("P")))
 {
     randing = global. current_datetime

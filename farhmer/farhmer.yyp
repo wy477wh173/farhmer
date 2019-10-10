@@ -367,6 +367,14 @@
             }
         },
         {
+            "Key": "5292fcce-f860-4b38-9840-3227e884aed5",
+            "Value": {
+                "id": "a4462049-af32-4389-ba42-76111cb25ca3",
+                "resourcePath": "sprites\\spr_soil\\spr_soil.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "52ca6e57-842d-5047-82aa-d663f46be29c",
             "Value": {
                 "id": "ff13b666-6ffd-2fee-165e-bf19635f7312",
@@ -404,14 +412,6 @@
                 "id": "65d25de6-fe25-4391-ae90-74b34f6e233c",
                 "resourcePath": "datafiles_yy\\savegame.txt.yy",
                 "resourceType": "GMIncludedFile"
-            }
-        },
-        {
-            "Key": "57006dff-d457-45e7-b465-584cd32d3b74",
-            "Value": {
-                "id": "ad707292-927a-4244-93f3-6a2e4af017b2",
-                "resourcePath": "sprites\\spr_soil_test\\spr_soil_test.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -919,6 +919,14 @@
             }
         },
         {
+            "Key": "bf7ac38f-4a92-420e-98ea-69652a82bbe2",
+            "Value": {
+                "id": "b4aa4c87-0c36-4921-b6f3-b2ad11e8d5ef",
+                "resourcePath": "views\\bf7ac38f-4a92-420e-98ea-69652a82bbe2.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "bfdc0ef3-520b-3eee-5122-9812a11f8d08",
             "Value": {
                 "id": "46178327-ca5d-c481-432b-d96aef573fd0",
@@ -1258,7 +1266,6 @@
         "52ca6e57-842d-5047-82aa-d663f46be29c",
         "3ff24be8-f949-092f-7cb5-927d206af518",
         "c201e084-a75a-0414-c937-f8c1dc43366f",
-        "c43e3049-825e-38b8-755d-b018d31f147e",
         "3d5e932d-58ca-6ff5-888d-98af7025503c",
         "316ac871-d4e7-9555-85f7-a6cf1735ec66",
         "7fdb635b-6c28-121e-e4d8-2588a8c21b9c",
@@ -1268,6 +1275,7 @@
         "b20c0f79-c204-4368-8404-70b94e2e97a9",
         "fd3057a0-3a57-67ef-a8c3-13251069a017",
         "5649692f-7907-85f0-a561-02e43924c183",
+        "1acc558b-e2f7-2fc3-0b84-d7b63e2f25b2",
         "15f8fa34-bd33-fa05-eec5-8d0a4385c245"
     ],
     "tutorial": ""
