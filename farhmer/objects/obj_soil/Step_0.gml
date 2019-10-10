@@ -18,6 +18,19 @@ if(check_free = 1)
 }
 
 
+if(state = 1)
+{//if drop seed on me, should plant it and start growing.
+    if(collision_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,obj_pickup,false,true))
+    {
+        sed = instance_nearest(x,y,obj_pickup)
+        if(global. item_array[sed.eyed,4] = type_seed)
+        {
+            plant_seed = sed.eyed
+            instance_destroy(sed)
+        }
+    }
+}
+
 if(plant_seed != inv_none)
 {
     state = 2
