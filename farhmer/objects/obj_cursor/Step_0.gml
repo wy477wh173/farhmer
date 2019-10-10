@@ -8,10 +8,10 @@ if(state = 0)
 }
 
 //conditional use for diferent items (maybe make this rmouse?) currently triggered by middlemouse
-if(use = 1)
-{
-    use = 0
-}
+//if(use = 1)
+//{
+//    use = 0
+//}
 
 if(state = 1)
 {//clickable

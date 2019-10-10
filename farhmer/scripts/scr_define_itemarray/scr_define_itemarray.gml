@@ -1,3 +1,6 @@
+///scr_define_itemarray()
+///this defines item ids as well as item definiteions
+///very important and heavy-lifting script
 #macro type_seed "Seed"
 #macro type_flower "Flower"
 #macro type_deployable "Deployable"

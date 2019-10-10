@@ -67,7 +67,12 @@ while(item_count < global. box_max)
 }
 
 
-if(obj_cursor.x > endrow)
+if(obj_cursor.obfusx > endrow && cursor_spaced = 1)
 {// if mouse is off the right end of the menu, close ment
     activated = 0
+}
+
+if(obj_cursor.obfusx < endrow)
+{//checks if player has crossed over into the box-structure. if player opens a box on right-half of screen this should keep it from auto-closing. May need to be refactored for touch
+    cursor_spaced = 1
 }

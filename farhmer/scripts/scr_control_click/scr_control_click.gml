@@ -10,6 +10,8 @@ if(mouse_check_button_pressed(mb_left))
     //obj_cursor.interact = 1
     if(movable = 1)
     {scr_inventory_useslot(global. inventory_select)}
+    if(movable = 0)
+    {obj_cursor.use = 1}
 }
 movable = 1
 if(keyboard_check_pressed(ord("P")))

@@ -1,4 +1,4 @@
-if(interact = 1)
+if(use = 1)
 {
-    interact = 0
+    use = 0
 }
