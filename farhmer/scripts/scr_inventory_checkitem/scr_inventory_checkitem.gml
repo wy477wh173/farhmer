@@ -16,11 +16,11 @@ while(xery < global. inventory_max)
         }
         else
             {
-            if(global. inventory_array[xery,2] >= inv_item_num)
+            if(global. inventory_array[xery,1] >= inv_item_num)
                 {
                 //found stack
                 xery = global. inventory_max
-                retr = global. inventory_array[xery,2]
+                retr = global. inventory_array[xery,1]
                 }
             xery = global. inventory_max
             }

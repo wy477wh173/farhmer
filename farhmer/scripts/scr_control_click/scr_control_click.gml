@@ -121,6 +121,11 @@ if(global. dev_mode = 1)
         scr_io_export_world()
     }
     
+    if(keyboard_check_pressed(ord("T")))
+    {//save world(test)
+        room_goto(rm_town)
+    }
+    
     if(keyboard_check_pressed(ord("L")))
     {//load world(test)
         scr_io_import_world()
@@ -132,7 +137,12 @@ if(global. dev_mode = 1)
     }
     if(keyboard_check_pressed(ord("1")))
     {
-        scr_spawn_pickup(inv_seed_sunflower,1,obj_cursor.x,obj_cursor.y)
+        scr_spawn_pickup(choose(inv_seed_fireweed,inv_seed_floppy,inv_seed_ghost,inv_seed_pumpkin),1,obj_cursor.x,obj_cursor.y)
+    }
+    
+    if(keyboard_check_pressed(ord("2")))
+    {
+        scr_spawn_pickup(choose(inv_flower_fireweed,inv_flower_floppy,inv_flower_ghost,inv_flower_pumpkin),1,obj_cursor.x,obj_cursor.y)
     }
     
     if(keyboard_check_pressed(ord("H")))
@@ -141,16 +151,6 @@ if(global. dev_mode = 1)
         scr_spawn_pickup(inv_tool_shear,1,obj_cursor.x + 32,obj_cursor.y)
         scr_spawn_pickup(inv_tool_pruner,1,obj_cursor.x + 64,obj_cursor.y)
         scr_spawn_pickup(inv_tool_wateringcan,1,obj_cursor.x + 96, obj_cursor.y)
-    }
-    
-    if(keyboard_check_pressed(ord("2")))
-    {
-        scr_spawn_pickup(inv_seed_generic,1,obj_cursor.x,obj_cursor.y)
-    }
-    
-    if(keyboard_check_pressed(ord("3")))
-    {
-        scr_spawn_pickup(inv_seed_floppy,1,obj_cursor.x,obj_cursor.y)
     }
     
     if(keyboard_check_pressed(ord("C")))
