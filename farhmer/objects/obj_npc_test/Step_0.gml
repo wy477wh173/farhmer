@@ -4,7 +4,7 @@ if(request_fulfilled= 0)
 }
 else
 {
-    speech = "Thanks buddy!! You made my day!"
+    speech = "Thanks buddy!! You made my day! Take this " 
 }
 
 if(collision_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,obj_cursor,false,1))

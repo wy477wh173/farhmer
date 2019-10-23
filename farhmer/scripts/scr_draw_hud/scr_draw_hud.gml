@@ -76,7 +76,8 @@ while(inv_ct < global. inventory_max)
             {
                 if(instance_exists(obj_envir_storagebox))
                 {
-                    if(obj_envir_storagebox.activated = 1)
+                    boxx = instance_nearest(obj_player.x,obj_player.y,obj_envir_storagebox)
+                    if(boxx.activated = 1)
                     {
                         scr_inventory_storeitem(global. inventory_array[inv_ct,0],global. inventory_array[inv_ct,1])
                         global. inventory_array[inv_ct,0]= 0
