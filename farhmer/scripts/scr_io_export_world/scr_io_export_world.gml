@@ -130,6 +130,12 @@ file_text_writeln(file_sel)
 //last riverdrop
 file_text_write_string(file_sel, global. river_lastdrop)
 file_text_writeln(file_sel)
+
+file_text_write_string(file_sel, obj_player.x)
+file_text_writeln(file_sel)
+
+file_text_write_string(file_sel, obj_player.y)
+file_text_writeln(file_sel)
     
 file_text_close(file_sel)//*/
 

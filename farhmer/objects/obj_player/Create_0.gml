@@ -23,6 +23,5 @@ mmb_counter = 0
 mmb_counter_inst = 30
 mmb_counter_max = 30
 
-
 player_spriteset = "crow"
 name = "Rick"

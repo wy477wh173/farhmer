@@ -114,4 +114,10 @@ file_text_readln(file_sel)
 global. river_lastdrop = file_text_read_real(file_sel)
 file_text_readln(file_sel)
 
+obj_player.x = file_text_read_real(file_sel)
+file_text_readln(file_sel)
+
+obj_player.y = file_text_read_real(file_sel)
+file_text_readln(file_sel)
+
 file_text_close(file_sel)

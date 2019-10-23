@@ -1,6 +1,6 @@
 
 {
-    "name": "room0",
+    "name": "rm_garden",
     "id": "aa4f9333-2d28-4be7-9a00-09805f168cc8",
     "creationCodeFile": "",
     "inheritCode": false,
