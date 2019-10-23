@@ -20,7 +20,7 @@ while(xery < global. inventory_max)
                 {
                 //found stack
                 xery = global. inventory_max
-                retr = global. inventory_array[xery,1]
+                retr = 1//global. inventory_array[xery,1]
                 }
             xery = global. inventory_max
             }

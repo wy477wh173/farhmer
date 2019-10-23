@@ -10,6 +10,7 @@ else
 if(collision_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,obj_cursor,false,1))
 {
     obj_player.movable = 0
+    global. mouseover_string = name
     if(mouse_check_button_pressed(mb_left))
     {
         obj_cursor.state = 1
@@ -21,7 +22,7 @@ if(collision_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,obj_cursor,fals
     {
         if(scr_inventory_checkitem(request,request_num))
         {
-            scr_inventory_transactitem(request,request_num)
+            scr_inventory_transactitem(request,-request_num)
             scr_spawn_particle_generic(x,y,5)
             request_fulfilled = 1
         }

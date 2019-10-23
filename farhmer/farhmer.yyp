@@ -679,6 +679,14 @@
             }
         },
         {
+            "Key": "7b039ac8-3e92-b8cd-f9d7-efbf6b9947fe",
+            "Value": {
+                "id": "50a1094e-a007-6ae1-4a0c-c27f3fe5028a",
+                "resourcePath": "scripts\\scr_set_mousestring\\scr_set_mousestring.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7b5606d8-70e9-409b-97bc-caee1f085e7f",
             "Value": {
                 "id": "6675c69f-f325-4325-9338-8b874227909f",
