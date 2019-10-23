@@ -9,7 +9,7 @@ movable = 1
 
 player_dir = 0
 player_sprite = spr_player_crow
-save_frequency = 55 * room_speed // save once every 55 seconds
+save_frequency = 15 * room_speed // save once every 55 seconds
 zero_waiter = 0
 inv_scrubtime = 0
 
