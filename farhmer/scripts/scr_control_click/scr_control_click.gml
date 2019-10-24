@@ -121,11 +121,6 @@ if(global. dev_mode = 1)
         scr_io_export_world()
     }
     
-    if(keyboard_check_pressed(ord("T")))
-    {//save world(test)
-        room_goto(rm_town)
-    }
-    
     if(keyboard_check_pressed(ord("L")))
     {//load world(test)
         scr_io_import_world()

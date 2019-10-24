@@ -4,9 +4,8 @@ if(request_fulfilled= 0)
 }
 else
 {
-    speech = "Thanks buddy!! You made my day! Take this " 
+    speech = "Thanks buddy!! You made my day! Take this " +global. inventory_array[reward,0] +" (x" + string(reward_num) + ") for you troubles." 
 }
-
 if(collision_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,obj_cursor,false,1))
 {
     obj_player.movable = 0
@@ -16,6 +15,10 @@ if(collision_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,obj_cursor,fals
         obj_cursor.state = 1
         speaking = 1
         scr_set_speech(name,portrait,speech,sfx_none)
+        if(request_fulfilled = 1)
+        {
+            scr_inventory_transactitem(reward,reward_num)
+        }
     }
     
     if(mouse_check_button_pressed(mb_right))

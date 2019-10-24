@@ -4,6 +4,8 @@
 
 
 ///*
+if(room = rm_garden)
+{
 var file_sel = file_text_open_write("savegame.txt")
 var scanner = instance_number(obj_soil)
 
@@ -79,6 +81,7 @@ while(xep <= scanner)
     xep += 1
 }
 file_text_close(file_sel) //*/
+}
 
 /////////////////////////////////////////////////////inventory fileio
 ///*
