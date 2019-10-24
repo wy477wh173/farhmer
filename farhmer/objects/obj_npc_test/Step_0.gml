@@ -1,10 +1,10 @@
 if(request_fulfilled= 0)
 {
-    speech = "Hey, I'm " + name + " and I'm just here to see how this NPC thing works. /n Can you get me " + string(request_num) + " " + global. item_array[request,1] + "?"
+    speech = "Hey, I'm " + name + " and I'm just here to see how this NPC thing works. \n Can you get me " + string(request_num) + " " + global. item_array[request,1] + "?"
 }
 else
 {
-    speech = "Thanks buddy!! You made my day! Take this " +global. inventory_array[reward,0] +" (x" + string(reward_num) + ") for you troubles." 
+    speech = "Thanks buddy!! You made my day! Take this " +global. item_array[reward,1] +" (x" + string(reward_num) + ") for you troubles." 
 }
 if(collision_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,obj_cursor,false,1))
 {
@@ -21,7 +21,7 @@ if(collision_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,obj_cursor,fals
         }
     }
     
-    if(mouse_check_button_pressed(mb_right))
+    if(mouse_check_button_pressed(mb_right) && request_fulfilled = 0)
     {
         if(scr_inventory_checkitem(request,request_num))
         {

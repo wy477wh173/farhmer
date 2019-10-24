@@ -26,7 +26,10 @@ cur = obj_cursor
 
 draw_set_valign(fa_bottom)
 selected_item = global. inventory_array[global. inventory_select,0]
-draw_text_ext(drawx, drawy - 16, string(global. item_array[selected_item,1]) + ": " + string(global. item_array[selected_item,2]) ,32,512)
+c = c_black
+draw_text_ext_color(drawx, drawy - 16, string(global. item_array[selected_item,1]) + ": " + string(global. item_array[selected_item,2]) ,32,512,c,c,c,c,1)
+c = c_white
+draw_text_ext_color(drawx + 1, drawy - 15, string(global. item_array[selected_item,1]) + ": " + string(global. item_array[selected_item,2]) ,32,512,c,c,c,c,1)
 
 //don't do commmands if mouse is in clickable area
 //if(cur.obfusy > drawy && cur.obfusx <= (global. inventory_max * spacing))
