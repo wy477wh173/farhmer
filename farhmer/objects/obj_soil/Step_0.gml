@@ -9,9 +9,11 @@ if(check_free = 1)
             if(opponent.plantid = 0)
             {instance_destroy(opponent)}
         }
-        //if I'm empty, kill me
-        //if(plantid = 0)
-        //{instance_destroy()}
+    }
+    
+    if(collision_point(x,y,obj_envir_footpath,false,true))
+    {
+        instance_destroy()
     }
     
     check_free = 1

@@ -9,6 +9,11 @@ if(player_spriteset = "rabbit")
 {player_sprite = spr_player_rabbit}
 ///////make this better, only a temporary thing
 
+if(!place_free(x,y))
+{
+    y += -2
+}
+
 //scrub inventory
 inv_scrubtime += 1
 if(inv_scrubtime > 15)
