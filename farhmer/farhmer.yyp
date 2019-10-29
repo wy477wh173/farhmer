@@ -727,6 +727,14 @@
             }
         },
         {
+            "Key": "793b6b08-41a0-1c72-6a28-9991ac2404eb",
+            "Value": {
+                "id": "47a8453b-c6fe-c6b1-4fcf-5061c8cb8401",
+                "resourcePath": "scripts\\scr_npc_calc\\scr_npc_calc.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "795d8f93-63fe-eb61-2d8e-171d0cbdc195",
             "Value": {
                 "id": "01650036-e625-5f10-16b8-bc9e0995e63a",
@@ -1138,7 +1146,7 @@
             "Key": "bc380adc-34d1-c5e0-321b-af1a157beb57",
             "Value": {
                 "id": "604dfc9b-172d-c607-c213-dfe7d50ad530",
-                "resourcePath": "objects\\obj_npc_test\\obj_npc_test.yy",
+                "resourcePath": "objects\/obj_npc_rickmctest\/obj_npc_rickmctest.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1574,6 +1582,7 @@
         "7b039ac8-3e92-b8cd-f9d7-efbf6b9947fe",
         "795d8f93-63fe-eb61-2d8e-171d0cbdc195",
         "302c2ddb-2802-7cc7-7805-9952d6a2bf95",
+        "793b6b08-41a0-1c72-6a28-9991ac2404eb",
         "b8f76460-83f8-2cc6-de99-9faee1314fc0",
         "b66d44ad-99ea-efb1-a424-33017e4b1e37",
         "18cb3377-3499-6d9f-1b73-c9263f98ff1d",

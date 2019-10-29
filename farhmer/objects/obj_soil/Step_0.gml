@@ -166,7 +166,11 @@ if(state = 2)
     {
         global. save_game = 1//trigger save
         state = 3
-        scr_spawn_pickup(plantid,1,x,y)
+        gerp = choose(1,1,0)
+        if (gerp = 0)
+        {
+            scr_spawn_pickup(plantid,1,x,y)
+        }
         
     }
 }

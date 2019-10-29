@@ -1,11 +1,6 @@
-if(request_fulfilled= 0)
-{
-    speech = "Hey, I'm " + name + " and I'm just here to see how this NPC thing works. \n Can you get me " + string(request_num) + " " + global. item_array[request,1] + "?"
-}
-else
-{
-    speech = "Thanks buddy!! You made my day! Take this " +global. item_array[reward,1] +" (x" + string(reward_num) + ") for you troubles." 
-}
+///scr_npc_calc()
+//universal calcs for NPC's
+
 if(collision_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,obj_cursor,false,1))
 {
     obj_player.movable = 0
