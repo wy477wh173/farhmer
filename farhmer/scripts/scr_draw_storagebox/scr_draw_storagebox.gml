@@ -61,7 +61,7 @@ while(item_count < global. box_max)
         adjusted_spot += 1
         item_count += 1
     }
-    endrow = drawx + 128
+    endrow = drawx + 256
     row += 1
     adjusted_spot = 0
 }

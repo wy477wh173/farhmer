@@ -154,12 +154,26 @@ if(state = 2)
     
     //*/
     //replace me to allow for arbitrary size
+    chunk = floor((plant_finishtime - plant_starttime) / sprite_get_number(global. item_array[plantid,13]) -1)
+    frames = sprite_get_number(global. item_array[plantid,13]) -1
+    
+    count = 0 
+    while(count < frames)
+    {
+        if(plant_timediff >= (chunk * count))
+        {
+            grow_frame = count
+        }
+        count += 1
+    }
+    
+    /*
     if(plant_timediff < total_growtime *.3) // 1/3 of the way
     {grow_frame = 2}
     if(plant_timediff >= total_growtime *.3 && plant_timediff < total_growtime *.6) // 1/3 to 1/6 of the way
     {grow_frame = 1}
     if(plant_timediff >= total_growtime *.6 && plant_timediff <= total_growtime ) // more than 1\6 but less than complete
-    {grow_frame = 0}
+    {grow_frame = 0}*/
     
     //*/
     if(global. current_datetime >= plant_finishtime)
