@@ -1,6 +1,7 @@
-if(request_fulfilled= 0)
+if(request_fulfilled = 0)
 {
-    speech = "Hey, I'm " + name + " and I'm just here to see how this NPC thing works. \n Can you get me " + string(request_num) + " " + global. item_array[request,1] + "?"
+    bodystring = speech_array[irandom(speech_options)]
+    speech = bodystring + string(request_num) + " " + global. item_array[request,1] + "?"
 }
 else
 {

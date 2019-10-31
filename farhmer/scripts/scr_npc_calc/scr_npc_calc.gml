@@ -8,6 +8,7 @@ if(collision_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,obj_cursor,fals
     
     if(mouse_check_button_pressed(mb_left))
     {
+        
         obj_cursor.state = 1
         speaking = 1
         scr_set_speech(name,portrait,speech,sfx_none)
@@ -47,5 +48,5 @@ if(set_newrequest = 1)
     reward_num = irandom_range(3,6)
     request_fulfilled = 0
     
-    scr_io_export_npc(name+".txt")
+    scr_io_export_npc("npc/"+name+".txt")
 }

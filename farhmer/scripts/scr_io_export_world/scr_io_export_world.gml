@@ -121,6 +121,8 @@ while(xep < scanner)
 }
 file_text_close(file_sel)//*/
 
+if(room = rm_garden)
+{
 ////////////////////////////////////////////////////////////// player fileio
 file_sel = file_text_open_write("player.txt")
 
@@ -141,9 +143,4 @@ file_text_write_string(file_sel, obj_player.y)
 file_text_writeln(file_sel)
     
 file_text_close(file_sel)//*/
-
-
-//////////////////////////////////////////////////////////////////////river fileio
-//file_sel = file_text_open_write(working_directory + "\riverinfo.txt")
-    
-//file_text_close(file_sel)//*/
+}
